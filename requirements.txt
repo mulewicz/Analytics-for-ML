@@ -5,3 +5,4 @@ statsmodels>=0.14
 scipy>=1.11
 numpy>=1.26
 streamlit_option_menu
+streamlit_lottie
