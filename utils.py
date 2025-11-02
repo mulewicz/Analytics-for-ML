@@ -681,12 +681,15 @@ def summary(df):
 
     st.divider()
 
-    st.markdown("### Executive Summary")
-    st.info("""
-         **Models C & D** are the core drivers of engagement and revenue.  
-         **Free users** dominate usage but not revenue — conversion potential is high.  
-         **Premium/Enterprise** tiers deliver strong retention and sustained activity.  
-         Spending scales linearly with activity — predictable, healthy business model.  
-         Weekly usage patterns suggest optimizing operations around weekday peaks.  
-         Low engagement models (A, B) may benefit from improved positioning or feature expansion.
+    st.markdown("### Reccomendations for improvements")
+    st.markdown("""
+    * Models A and B are used much less. Maybe they are slower or less accurate so it might be worth considering improvement or removing them.
+    * Most active users are on free or low-cost plans. Offering short Premium trials or showing what extra features higher plans include could encourage them to upgrade.
+    * Basic and Standard users often leave early. Maybe sending them helpful reminders or small achievements would help to keep them active.
+    * Since activity drops on weekends, using that time for maintenance, testing, and model retraining is most wise.
+    * Letting the system choose the best model based on the task type and the user’s budget and reccomend it to them.
+    * Including practical “when to use which model” guides in documentation or creating and deploying machine learning model 
+    that classifies which problem is good for a given task might help unburden the popular models from simple tasks.
+    Maybe Returning small hints in responses (e.g., “This request cost X credits — you could use Model D to save 20%.”
+    * Adding helper functions to group similar requests and reuse previous results to reduce cost.
     """)
