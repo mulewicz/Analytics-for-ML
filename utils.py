@@ -385,7 +385,7 @@ def plot16(df):
     fig.update_layout(xaxis={"categoryorder": "total descending"})
     st.plotly_chart(fig)
 
-
+@st.cache_data
 def plot17(df):
     df.groupby("feature")
 
@@ -408,7 +408,8 @@ def plot18(df):
         title="Histogram of Licenses"
     )
     return fig
-
+    
+@st.cache_data
 def plot19(df):
     d = df.copy()
     d["day_id"] = pd.to_datetime(d["day_id"])
@@ -446,6 +447,7 @@ def plot19(df):
     )
     st.plotly_chart(fig)
 
+@st.cache_data
 def plot20(df):
     user = df.groupby(["uuid", "day_id"])[["requests_cnt", "spent_amount"]].sum().reset_index()
     summary = user.groupby("uuid")[["requests_cnt", "spent_amount"]].sum().reset_index()
@@ -565,6 +567,7 @@ def summary_kpis(df):
     st.markdown("---")
     st.caption("KPIs summarizing usage, efficiency, retention, and spending behavior across all models and licenses.")
 
+@st.cache_data
 def summary(df):
     st.markdown("### Behavioural Segments Snapshot")
     user_summary = df.groupby("uuid")[["requests_cnt", "spent_amount"]].sum().reset_index()
