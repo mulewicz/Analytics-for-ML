@@ -3,9 +3,6 @@ import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from streamlit_lottie import st_lottie
-import streamlit_authenticator as stauth
-import yaml
-from yaml.loader import SafeLoader
 import json
 import time
 from utils import *
