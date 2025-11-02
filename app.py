@@ -10,29 +10,6 @@ import json
 import time
 from utils import *
 
-config = st.secrets.get("auth", None)
-
-if config:
-    authenticator = stauth.Authenticate(
-        config["credentials"],
-        config["cookie"]["name"],
-        config["cookie"]["key"],
-        config["cookie"]["expiry_days"],
-    )
-    name, auth_status, username = authenticator.login("Login", "main")
-
-    if auth_status is False:
-        st.error("Nieprawidłowe dane logowania.")
-        st.stop()
-    elif auth_status is None:
-        st.info("Podaj login i hasło, aby wejść.")
-        st.stop()
-    else:
-        authenticator.logout("Wyloguj", "sidebar")
-else:
-    st.warning("Brak konfiguracji logowania w st.secrets — aplikacja działa bez hasła.")
-
-
 df = pd.read_csv("~/Desktop/nie_spacja/AnalyticsML/da_internship_task_dataset.csv")
 
 st.set_page_config(page_title="Analytics for ML features", layout="wide")
