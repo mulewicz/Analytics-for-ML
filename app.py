@@ -10,7 +10,7 @@ import json
 import time
 from utils import *
 
-df = pd.read_csv("~/Desktop/nie_spacja/AnalyticsML/da_internship_task_dataset.csv")
+df = pd.read_csv("da_internship_task_dataset.csv")
 
 st.set_page_config(page_title="Analytics for ML features", layout="wide")
 st.title('Analytics for ML features')
@@ -28,7 +28,7 @@ def load(message = "All ready!"):
     :param message: message to be displayed after loading
     :return: animation from https://app.lottiefiles.com    """
 
-    with open("/Users/aleksandramulewicz/Desktop/nie_spacja/AnalyticsML/Loader_cat.json", "r") as f:
+    with open("Loader_cat.json", "r") as f:
         lottie_tea = json.load(f)
     placeholder = st.empty()
 
