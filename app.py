@@ -126,9 +126,6 @@ if selected == "Relation Exploration":
     * Enterprise users show a steeper slope, suggesting that each request costs more on average — likely due to advanced or higher-value features.
     * Basic and Standard users cluster near the origin, reflecting limited usage and minimal spending.
     """)
-    plot8(df)
-    st.write("We can see that Models C and D consistently have the highest spending values, especially for Feature 4 and Feature 1, indicating these combinations drive the most usage or cost. In contrast, Models A and B show much lower averages across all features, suggesting they are less resource-intensive or less frequently used.")
-
 if selected == "Trends over time":
     plot7(df)
     st.markdown("""
