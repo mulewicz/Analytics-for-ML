@@ -1,9 +1,9 @@
 # Analytics for ML Features Dashboard
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?style=flat&logo=python&logoColor=yellow)
-![Streamlit](https://img.shields.io/badge/Streamlit-1.25.0-FF4B4B?style=flat&logo=streamlit&logoColor=white)
-![Plotly](https://img.shields.io/badge/Plotly-5.15.0-3F4F75?style=flat&logo=plotly&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-2.0.0-150458?style=flat&logo=pandas&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 
 An interactive data science dashboard designed to analyze user behavior, model performance, and spending efficiency for a platform offering Machine Learning features. This tool provides actionable insights into how different license tiers interact with various ML models.
 
