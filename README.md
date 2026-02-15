@@ -5,7 +5,7 @@
 ![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 
-An interactive data science dashboard designed to analyze user behavior, model performance, and spending efficiency for a platform offering Machine Learning features. This tool provides actionable insights into how different license tiers interact with various ML models.
+An interactive data science dashboard designed to analyze user behavior, model performance, and spending efficiency for a platform offering Machine Learning features. This tool provides actionable insights into how different license tiers interact with various ML models. You can visit the app at this link: https://analytics-for-ml.streamlit.app
 
 ---
 
