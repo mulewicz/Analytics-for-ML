@@ -5,7 +5,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from streamlit_lottie import st_lottie
 import json
 import time
-from utils import *
+from src.utils import *
 
 df = pd.read_csv("da_internship_task_dataset.csv")
 
